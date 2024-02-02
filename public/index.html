@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>THAY-XDSHOP</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="icon" type="image/x-icon" href="../Images/basketball-ball.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/inter-ui@3.11.0/inter.min.css'>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <div class="container-fluid position-sticky nav-bar p-0">
+        <div class="container-fluid position-relative p-0" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand logo">
+
+                    <h3 class="m-0 text-primary"><span class="text-dark"><img src="./Images/logo.jpg" alt=""
+                                style="width: 65px;"> THAY-XDSHOP</h3>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3 text-center" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-3 navtext">
+                        <a href="./home.html" class="nav-item">Home</a>
+                        <a href="./testabout.html" class="nav-item ">About</a>
+                        <a href="index.html" class="nav-item"
+                            style="color: #16BF78; border-bottom: solid 3px #16BF78;">Product</a>
+                        <a href="newcolection.html" class="nav-item ">New Colection</a>
+                        <a href="contact.html" class="nav-item">Contact</a>
+                        <a href="blog.html" class="nav-item">Blog</a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse justify-content-between px-3 text-center" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0 header-icons">
+                        <i class='bx bx-search' id="search-icons"></i>
+                        <i class='bx bx-user' id="user-icons"></i>
+                        <i class='bx bx-shopping-bag' id="cart-icons" data-quantity="0"></i>
+                        <i class='bx bx-menu' id="menu-icons"></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="search-box">
+                <input type="search" name="" id="search-item" placeholder="Search ..." onkeyup="searchs()">
+            </div>
+            <!--Cart Box-->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!--Content-->
+                <div class="cart-content">
+
+                </div>
+                <!--Total-->
+                <div class="total">
+                    <div class="total-title">Total: </div>
+                    <div class="total-price">0 $</div>
+                </div>
+
+                <!--BUY1-->
+                <button type="button" class="btn-buy"> Buy Now!</button>
+                <!--Buy Button-->
+                <button class="truck-button">
+                    <span class="default">Complete Order</span>
+                    <span class="success">
+                        Order Placed
+                        <svg viewbox="0 0 12 10">
+                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                        </svg>
+                    </span>
+                    <div class="truck">
+                        <div class="wheel"></div>
+                        <div class="back"></div>
+                        <div class="front"></div>
+                        <div class="box"></div>
+                    </div>
+                </button>
+                <!--Cart Close-->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+
+            <!--USER-->
+
+            <div class="user container" id="container">
+                <div class="form-container sign-up-container ">
+                    <form action="#">
+                        <h1>Create Account</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your email for registration</span>
+                        <input class="textlog" type="text" placeholder="Name" />
+                        <input class="textlog" type="email" placeholder="Email" />
+                        <input class="textlog" type="password" placeholder="Password" />
+                        <a href="">You already have an account?</a>
+                        <button class="button-singin-up">Sign Up</button>
+                    </form>
+                </div>
+
+                <!--LOG IN FORM -->
+
+                <div class="user form-container sign-in-container">
+                    <form action="#">
+                        <h1>Sign in</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your account</span>
+                        <input class="textlog" type="email" placeholder="Email" />
+                        <input class="textlog" type="password" placeholder="Password" />
+                        <a href="#">Forgot your password?</a>
+                        <button class="button-singin-up">Sign In</button>
+                    </form>
+                </div>
+                <div class="user overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1 style="color:black;">Hi, Friend!</h1>
+                            <p style="color: black;">If you already have an account, click SIGNIN</p>
+                            <button class="ghost" id="signIn">Sign In</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1 style="color: black;">Hello, Friend!</h1>
+                            <p style="color: black;">If you don't have an account yet, click here SIGN UP</p>
+                            <button class="ghost" id="signUp">Sign Up</button>
+                        </div>
+                    </div>
+                    <i class='bx bx-x' id="close-cart2"></i>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="breadcrumb-section breadcrumb-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <div class="breadcrumb-text">
+                        <p>THAY-XDSHOP</p>
+                        <h1>SHOP PRODUCT</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="shop container-fluid p-5" id="product-list">
+        <!--Content-->
+        <div class="shop-content">
+            <!--box 1-->
+            <div class="product-box">
+                <div class="view view-ninth"><a href="./Detail Product/product1.html">
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhzb2eDwXraiB1pWh1gDhf3GwhxrjvMgWlJWY38FAix28kgktcw6N3XtncytgvDCYsPKYCSLu87Th6mgKnjKc58YPWI3BWSDqZFlcdkUVTmpeyi3T5RSf3TfR-bAFjRSwq-rb2E0tLLbvKzhSz11RGDotVeMrkbRcbBqcU-WPqbDlMvdV4R3zHwWs0Lfg"
+                            alt="" class="product-img">
+
+                        <div class="content">
+                            <h2>NIKE RENEW ELEVATE 3</h2>
+                            <p>CLICK TO SEE DETAIL </p>
+                        </div>
+                    </a> </div>
+                <h2 class="product-title">Nike Renew Elevate 3</h2>
+                <span class="price">2000 $</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+
+            </div>
+            <!--box 2-->
+            <div class="product-box">
+                <div class="view view-ninth"><a href="./Detail Product/product2.html">
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhfAnXCuTpt-kkoE-SjXqp--7LP5PDlAMqYcwYFPxYKMvsRVfX5FMqxtK-VOknv4hIBTyuL0_JCACA7KEP5LWLMGiHY65K8KvdVoXCSwcjf4hjPYTyBJ376Jv8fIT-fLpDWzvTn9g_YFFpe2yZWX3lGbhCZAZPpt02BmpOLYzPuz3arKQ2Lu0W6ckJLiw"
+                            alt="" class="product-img">
+
+                        <div class="content">
+                            <h2>NIKE RENEW ELEVATE 3</h2>
+                            <p>CLICK TO SEE DETAIL </p>
+                        </div>
+                    </a> </div>
+                <h2 class="product-title">Zoom Freak 4</h2>
+                <span class="price">2000 $</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 3-->
+            <div class="product-box">
+                <div class="view view-ninth"><a href="./Detail Product/product3.html">
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgqWA-RjK1WhLRZved6JHzkVCawr9apZzjd1o8pCfr9uUVJC2KUfif89J4e2AqkfqqYGf-5KpbVQhUfcEKVibQPkcGb9fhvK9PE1dZ0apwVkIhOeP9JAen4KeGW4zwsHIg-5RKhdwCVGWV-IHOomPrfBjGVMWx8QybBB7ssIfJoIVdUM5-lcEGYItbF7A"
+                            alt="" class="product-img">
+                        <div class="content">
+                            <h2>JORDAN ONE TAKE 4 PF</h2>
+                            <p>CLICK TO SEE DETAIL </p>
+                        </div>
+                    </a> </div>
+                <h2 class="product-title">Jordan One Take 4 PF </h2>
+                <span class="price">3499 $</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 4-->
+            <div class="product-box">
+                <div class="view view-ninth"><a href="./Detail Product/product4.html">
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiq6O7qvTRyXRqltXdX0-KiA6yR3TEdT2K4gO6Dbs2dq9HObgqU3ACRxxCsPMMJD3cY3Q6Vdfc3ao2LIJ-_64rjaCN0kOi3UvJfLCFXmpo5ShRRqtTsQPXwm_YyLHVA02KeWGEyRMO24Gi3v9eu2u7r-gIiwZNgu7xTH-4geuZM_hRHACK6KFKk8aq5PQ"
+                            alt="" class="product-img">
+
+                        <div class="content">
+                            <h2>KD TREY 5 X EP</h2>
+                            <p>CLICK TO SEE DETAIL </p>
+                        </div>
+                    </a> </div>
+                <h2 class="product-title">KD Trey 5 X EP</h2>
+                <span class="price">5500 $</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 5-->
+            <div class="product-box">
+                <div class="view view-ninth"><a href="./Detail Product/product5.html">
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhJkVXFWHxeejebh2UfHrxnJKkGK9Zyf0aNvU8DccBiYqZAKbP_fIodK6Tku_-615hiW0IS-4KKQKu5aAX4x-V--StkfGqKgORj5qI-daMHlmxD6ck5WUTjYrMQxGkli7h3DWyPzh4_s2H39HNTsZbjSYWkwHKu0PDS3H6QZ3WMkudsFoBekOO7CvqEgw"
+                            alt="" class="product-img">
+
+                        <div class="content">
+                            <h2>JORDAN NU RETRO 1 LOW</h2>
+                            <p>CLICK TO SEE DETAIL </p>
+                        </div>
+                    </a> </div>
+                <h2 class="product-title">Jordan Nu Retro 1 Low</h2>
+                <span class="price">7699 $</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 6-->
+            <div class="product-box">
+                <div class="view view-ninth"><a href="./Detail Product/product6.html">
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEg1nxLkUs4SGZfCmZByhieeGeV1TxS6asATHUebSVdM0BEjClcQI7BYloZ2SkVQFEsZd-fMbqrYjOF0C6mt6p4kPlvyJjjG2sHNGMKnc42iWYlXR10DPqYhVx7nTKVuTXX3E_l62i3J7NN5YCTHrFFk7r3p0aYIyTNmpyuB_bXf9jvjIK2pKB2x6TGM5g"
+                            alt="" class="product-img">
+
+                        <div class="content">
+                            <h2>KYRIE INFINITY EP</h2>
+                            <p>CLICK TO SEE DETAIL </p>
+                        </div>
+                    </a> </div>
+                <h2 class="product-title">Kyrie Infinity EP</h2>
+                <span class="price">5999 $</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 7-->
+            <div class="product-box">
+                <div class="view view-ninth"><a href="./Detail Product/product7.html">
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgkVolfvl7xI6mcIFtJHZeAvdL_A3RRO4dmqtHy1zDFN9OHiduH0oN2F6vQGX4AWBjuI-OXv0TqO7-77t2jSeRGIEXEdSPtEwZ_1cSsSnijH5f3CjBfmWh8g_ApD4GzMHMp5GtXPqO1DgsEGXDI0r_Ndkj5R1TXqCGtIge8ou8LyCDnGM6e2JKU64_PAA"
+                            alt="" class="product-img">
+
+                        <div class="content">
+                            <h2>AIR JORDAN XXXVII PF</h2>
+                            <p>CLICK TO SEE DETAIL </p>
+                        </div>
+                    </a> </div>
+                <h2 class="product-title">Air Jordan XXXVII PF</h2>
+                <span class="price">4599 $</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 8-->
+            <div class="product-box">
+                <div class="view view-ninth"><a href="./Detail Product/product8.html">
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhyVgamBByLJE6azRZpRrceegWnBQDbpW1syjGkN76p8LdPs7eWhItrsc0WUTZ7fGGNtd3Vwi2YM6vVMlX5xqa6AaJXWq8npwq8pbm76-7mca_K7qhvi3DM2fQlFZ1h1pE5oX-26WLGvBBd1tIPCR8V_Lgb-pIoMwXihV_T5mNicdfD-2rjmOjBXtdi4w"
+                            alt="" class="product-img">
+
+                        <div class="content">
+                            <h2>JORDAN WHY NOT .6 PF</h2>
+                            <p>CLICK TO SEE DETAIL </p>
+                        </div>
+                    </a> </div>
+                <h2 class="product-title">Jordan Why Not .6 PF</h2>
+                <span class="price">3399$</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 9-->
+            <div class="product-box">
+                <div class="view view-ninth"><a href="./Detail Product/product9.html">
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgGYYWpgWAahcOhdDeuXctzg2f6lJR_Um9G90xd86udNKBlB8GT6L--BuODbLbIbFXb-95yWM5wPfwQXmX1bFCeeJi21kS2-m-YgmUdUoAfKV3shLQhgX3Wl-ECy3pssayOtNUeTDzK7KIXLb-Q7XT95CCBVzjxWBhEQ0bI9L5hNi5GnJtynTkIWTLk4w"
+                            alt="" class="product-img">
+
+                        <div class="content">
+                            <h2>Zion 2 PF</h2>
+                            <p>CLICK TO SEE DETAIL </p>
+                        </div>
+                    </a> </div>
+                <h2 class="product-title">Zion 2 PF</h2>
+                <span class="price">4399$</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 10-->
+            <div class="product-box">
+                <div class="view view-ninth"><a href="./Detail Product/product10.html">
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjrV-K7v9I7SMdvhU1oUS58ud53fodVWCVnbiAiLi_aoGb7klYewakhD39AuiKQJx2ay4ORfErv4pBbugYzVk_wuNJdsiTsMBPZY24Tl4OzPKWmsFiT3IygHK48KOti1xhGIDaQi3TxdJT1Jkl_UWXMdJ1SgX50H3XWumchb37hl0ogWWP1Gt4gGvOWtw"
+                            alt="" class="product-img">
+
+                        <div class="content">
+                            <h2>ZOOM FREAK 4</h2>
+                            <p>CLICK TO SEE DETAIL </p>
+                        </div>
+                    </a> </div>
+                <h2 class="product-title">Zoom Freak 4</h2>
+                <span class="price">9599$</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 11-->
+            <div class="product-box">
+                <div class="view view-ninth"><a href="./Detail Product/product11.html">
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiecLnJ73pyKlGgiNd6GzuzbKz-xRf70fE0bxdDQqnx6O2E4BJVrNSX9SUfgiyMc9a-4PD9WqILnA78hV6Ms4ZKlIVYZFOlusNKcOTIFrl5aO64WN9c8Wil1w1liMokPMcrwxqp8a28QoAnMEm3DwHaDQJuL8knZkMWaQTYDzyVAp8KrB8ERy9fyHQiyw"
+                            alt="" class="product-img">
+                        <div class="mask mask-1"> </div>
+                        <div class="mask mask-2"> </div>
+                        <div class="content">
+                            <h2>LEBRON XX EP</h2>
+                            <p>CLICK TO SEE DETAIL </p>
+                        </div>
+                    </a> </div>
+                <h2 class="product-title">LeBron XX EP</h2>
+                <span class="price">2799$</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 12-->
+            <div class="product-box">
+                <div class="view view-ninth"><a href="./Detail Product/product12.html">
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjiTk4dmCf6oNFwNQB0-rFn8E-PMDhl6BjdwY8Iy9sQij61iVHsbYsd-uY6n4W_bDFU1jZzEKpH5wfGAK-Qp2TO_r_cPWHLVYcZDyUEL_T-Ylp7nvlUrvqI_cdim76NdWncpfE7ul20I3rEdDHUsu0YPPr8qCwIKJ6cf2fW6EHZOZd6xaDiydbiam2ihw"
+                            alt="" class="product-img">
+
+                        <div class="content">
+                            <h2>COSMIC UNITY 3</h2>
+                            <p>CLICK TO SEE DETAIL </p>
+                        </div>
+                    </a> </div>
+                <h2 class="product-title">Cosmic Unity 3</h2>
+                <span class="price">7599$</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 13-->
+            <div class="product-box">
+                <div class="view view-ninth"><a href="./Detail Product/product13.html">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNY7tKsewS7A7KsM-PZPkEcGc9IixaOg1kKf5_K37tXKzkVUKb_UsVlFm2FKpeJQrLwx8AiPAb8LIkFfVkn0UsJp_c-uwxWFGSVb0Dn7DNoS6Qp7M3tx_r53dNyVFOCTGgDCq-7J_CAh269R26bOrjnBMhkpV9dZlTxPCMUL2rW88jme8zo7HSn12Hqw/s864/sneaker13%20-%20Copy.jpg"
+                            alt="" class="product-img">
+
+                        <div class="content">
+                            <h2>FREAK 4</h2>
+                            <p>CLICK TO SEE DETAIL </p>
+                        </div>
+                    </a> </div>
+                <h2 class="product-title">FREAK 4</h2>
+                <span class="price">8599$</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 14-->
+            <div class="product-box">
+                <div class="view view-ninth"><a href="./Detail Product/product14.html">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_G5F2uunw7oGmrqHoBl30yRGm2UXaSx6JgZbBiZq3vvOmHjd0d7aQmIxkwMuArdbb8ZlU0LFGe8-etGeqf4LwNoHCsT006R4Z7k4xVzYPdR9uemdVUqBtYuePcUHTIyuotjLkInubnq3uLMeySaOEwPDcYLbux9mp8rR2eTVi8e4TsJ62vJjNXt_J3g/s864/sneaker14%20-%20Copy.jpg"
+                            alt="" class="product-img">
+
+                        <div class="content">
+                            <h2>Tatum 1 'St. Louis'</h2>
+                            <p>CLICK TO SEE DETAIL </p>
+                        </div>
+                    </a> </div>
+                <h2 class="product-title">Tatum 1 'St. Louis'</h2>
+                <span class="price">12599$</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 15-->
+            <div class="product-box">
+                <div class="view view-ninth"><a href="./Detail Product/product15.html">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidb94OEy5Hnfq-LDkPT_tfwxReX9XTK8nMS_v05JIzPLPnSiAgyLpkUxiaNnJNpKlChgVi7vpCFwVYA3nlCfnD5IbLipKj7jAvaIxse1HC5OOWqxd6DBLoDwmCzDgJhqC2_x9RvzXRRzdQjMkZwiB8_GDlzt3qRjUtHInwt-KTXkzoZGYI3-WbqfmT2g/s864/sneaker15%20-%20Copy.jpg"
+                            alt="" class="product-img">
+                        <div class="mask mask-1"> </div>
+                        <div class="mask mask-2"> </div>
+                        <div class="content">
+                            <h2>LeBron XX</h2>
+                            <p>CLICK TO SEE DETAIL </p>
+                        </div>
+                    </a> </div>
+                <h2 class="product-title">LeBron XX</h2>
+                <span class="price">5799$</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 16-->
+            <div class="product-box">
+                <div class="view view-ninth"><a href="./Detail Product/product16.html">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy_QcyhWC66rpbZJocQh5xK7gsjrjpUcmxDFyxz_zG3mScSJGDjfys-nqso2RV7-SIwb0FTppL2XNqdUArveRsHK-VJk24LsifCVxMNus2GDwUy39eOfnVBiV6Lf0OVFYqY9uMtR5iIeeXBnZpw-r0QrPxnDPCrOlmGHeiYwNylQnimEeo0aqmSQ9pBQ/s864/sneaker16%20-%20Copy.jpg"
+                            alt="" class="product-img">
+
+                        <div class="content">
+                            <h2>LeBron XX SE</h2>
+                            <p>CLICK TO SEE DETAIL </p>
+                        </div>
+                    </a> </div>
+                <h2 class="product-title">LeBron XX SE</h2>
+                <span class="price">7599$</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 17-->
+            <div class="product-box">
+                <div class="view view-ninth"><a href="./Detail Product/product17.html">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisa3vk4mio2eAi_P1l5kKyYA_6FaIWNwpQ2cKCuqTngCN2LExP_vFDfxh4dIf93ZyPxSJPgr2al1po3cWhb3QI931xeI_WPAAoqeAp8pYv8lkBO6Z8a3y9qdM9qk2zpc6V13HKUmtfvOMq453gPba2YxvZzgRia3MudD0JZCrNGtifopuZYeVbEF-hCQ/s592/sneaker17.jpg"
+                            alt="" class="product-img">
+
+                        <div class="content">
+                            <h2>Nike Renew Elevate 3</h2>
+                            <p>CLICK TO SEE DETAIL </p>
+                        </div>
+                    </a> </div>
+                <h2 class="product-title">Nike Renew Elevate 3</h2>
+                <span class="price">4399$</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 18-->
+            <div class="product-box">
+                <div class="view view-ninth"><a href="./Detail Product/product18.html">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia84hOWeEDaCvCb456C3INpvFkrGMftWzWF8RUQaluYQ-bIRloj_79AnoptysMNfHJ8NKfUKwTJLpZzxTJFbpAxoRXMLeY7HEq0IBFS7m5fZ2QokIDkNdYt0UgCXFQ9myBdJstzJogHmoWfbkx1u0F2NgND17lYejh1QB_x5ch0CPt8UUJobdw1JEP5w/s592/sneaker18.jpg"
+                            alt="" class="product-img">
+
+                        <div class="content">
+                            <h2>Jordan One Take 4 EP</h2>
+                            <p>CLICK TO SEE DETAIL </p>
+                        </div>
+                    </a> </div>
+                <h2 class="product-title">Jordan One Take 4 EP</h2>
+                <span class="price">8699$</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 19-->
+            <div class="product-box">
+                <div class="view view-ninth"><a href="./Detail Product/product19.html">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgB5IgmVEdvH7j-aLbJeRG7I8AQN41incvYR4Vmr5Gg7UTXX1ICDJbVbC58ZAKzW9RlkPrzPgiHPM1ajQead4GYM7M8P5Xmkhu_V6e490osYrD47GB-1Gl9uSYOUgU_yk18qbGhiPIX9eZrqNQUARR4ClmlNOgmb81YlzkXuBTjB9cbfHyWsrUFIKspdQ/s592/sneaker19.jpg"
+                            alt="" class="product-img">
+
+                        <div class="content">
+                            <h2>Air Jordan XXXVII Low PF</h2>
+                            <p>CLICK TO SEE DETAIL </p>
+                        </div>
+                    </a> </div>
+                <h2 class="product-title">Air Jordan XXXVII Low PF</h2>
+                <span class="price">4999$</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 20-->
+            <div class="product-box">
+                <div class="view view-ninth"><a href="./Detail Product/product20.html">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEim_rxBxF7PHwAY7Fpxy7woncuexAFsSFeio_l-gpRmq4LAx-liSlr7fTe0wzJAy7TOoRSHuFS6QCh0qp0qs6EqYdskmWbMfozrb5WwnfOwY0UYnbI3BqdlsCaFXi-qRSKO8l7CxtkOj9DwoGg3vddc1bF-awB8hwhyqN6jOp4OuO8QdAVaLbUJLiiyfQ/s592/sneaker20.jpg"
+                            alt="" class="product-img">
+
+                        <div class="content">
+                            <h2>Ja 1 Day One' EP</h2>
+                            <p>CLICK TO SEE DETAIL </p>
+                        </div>
+                    </a> </div>
+                <h2 class="product-title">Ja 1 Day One' EP</h2>
+                <span class="price">7599$</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+
+    </section>
+    <!--footer start-->
+    <div class="container-fluid bg-white text-black-50 py-0 px-sm-3 px-lg-5 shadow-lg footer-contact"
+        style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-primary"><span class="text-dark">THAY-XDSHOP</span></h1>
+                </a>
+                <p style="font-family: 'Noto Sans Lao', sans-serif;">Customers can contact us through the channels below
+                    Thank you and honored that the customer used our service</p>
+                <h6 class="text-dark text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-outline-success btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-success btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-success btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-success btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-dark text-uppercase mb-4" style="letter-spacing: 5px;">SUPPORT</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Product</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help & Support</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Return Policy</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms Of Use</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>FAQ</a>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-dark text-uppercase mb-4" style="letter-spacing: 5px;">Our Brances</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Laos</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Thailand</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Japan</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Canada</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>United State</a>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-dark text-uppercase mb-4" style="letter-spacing: 5px;">Payment method</h5>
+                <img src="./Images/visa.png" alt="" style="width: 44px;">
+                <img src="./Images/master-card.png" alt="" style="width: 44px;">
+                <img src="./Images/moneygram.png" alt="" style="width: 44px;">
+                <img src="./Images/paypal.png" alt="" style="width: 44px;">
+                <h5 class="text-dark text-uppercase mt-5 mb-4  " style="letter-spacing: 5px;">Contact Us</h5>
+                <p style="font-family: 'Noto Sans Lao', sans-serif;"><i
+                        class="fa fa-map-marker-alt mr-2 text-danger"></i>Street 13, SaiGon City, Vietnam </p>
+                <p><i class="fa fa-phone-alt mr-2 text-success"></i>+865 20 96863648</p>
+                <p><i class="fa fa-envelope mr-2 text-warning"></i>xoandev@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+    <!-- Back to Top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src='https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js'></script>
+    <script src='main.js'></script>
+
+    <script>
+        document.querySelector("#close-cart2").onclick = () => {
+            user.classList.remove("active")
+        }
+
+        document.querySelector(".cancel").onclick = () => {
+            checkout.classList.remove("active")
+            document.getElementById('search-icons').style.color = 'black';
+            document.getElementById('cart-icons').style.color = 'black';
+            document.getElementById('menu-icons').style.color = 'black';
+            document.getElementById('user-icons').style.color = 'black';
+        }
+        let checkout = document.querySelector(".checkout")
+
+        document.querySelector(".btn-checkout").onclick = () => {
+            checkout.classList.toggle("active");
+            navbar.classList.remove("active")
+            cart.classList.remove("active");
+            user.classList.remove("active");
+        }
+
+    </script>
+</body>
+
+</html>

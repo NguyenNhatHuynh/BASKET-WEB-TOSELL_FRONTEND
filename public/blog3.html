@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>THAY-XDSHOP</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='blog.css'>
+    <link rel="icon" type="image/x-icon" href="./Images/basketball-ball.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/inter-ui@3.11.0/inter.min.css'>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-fluid nav-bar p-0">
+        <div class="container-fluid p-0" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand logo">
+                    <h3 class="m-0 text-primary"><span class="text-dark"><img src="./Images/logo.jpg" alt=""
+                                style="width: 65px;"> THAY-XDSHOP</h3>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3 text-center" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-3 navtext">
+                        <a href="home.html" class="nav-item">Home</a>
+                        <a href="testabout.html" class="nav-item ">About</a>
+                        <a href="index.html" class="nav-item">Product</a>
+                        <a href="newcolection.html" class="nav-item ">New Colection</a>
+                        <a href="contact.html" class="nav-item">Contact</a>
+                        <a href="blog.html" class="nav-item"
+                            style="color: #16BF78; border-bottom: solid 3px #16BF78;">Blog</a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse justify-content-between px-3 text-center" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0 header-icons">
+                        <i class='bx bx-search' id="search-icons"></i>
+                        <i class='bx bx-user' id="user-icons"></i>
+                        <i class='bx bx-shopping-bag' id="cart-icons" data-quantity="0"></i>
+                        <i class='bx bx-menu' id="menu-icons"></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="search-box">
+                <input type="search" name="" id="search-item" placeholder="Search ..." onkeyup="searchs()">
+            </div>
+            <!--Cart Box-->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!--Content-->
+                <div class="cart-content">
+
+                </div>
+                <!--Total-->
+                <div class="total">
+                    <div class="total-title">Total: </div>
+                    <div class="total-price">0 $</div>
+                </div>
+
+                <!--BUY1-->
+                <button type="button" class="btn-buy"> Buy Now!</button>
+                <!--Buy Button-->
+                <button class="truck-button">
+                    <span class="default">Complete Order</span>
+                    <span class="success">
+                        Order Placed
+                        <svg viewbox="0 0 12 10">
+                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                        </svg>
+                    </span>
+                    <div class="truck">
+                        <div class="wheel"></div>
+                        <div class="back"></div>
+                        <div class="front"></div>
+                        <div class="box"></div>
+                    </div>
+                </button>
+                <!--Cart Close-->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+
+            <!--USER-->
+
+            <div class="user container" id="container">
+                <div class="form-container sign-up-container ">
+                    <form action="#">
+                        <h1>Create Account</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your email for registration</span>
+                        <input class="textlog" type="text" placeholder="Name" />
+                        <input class="textlog" type="email" placeholder="Email" />
+                        <input class="textlog" type="password" placeholder="Password" />
+                        <a href="">You already have an account?</a>
+                        <button class="button-singin-up">Sign Up</button>
+                    </form>
+                </div>
+
+                <!--LOG IN FORM -->
+
+                <div class="user form-container sign-in-container">
+                    <form action="#">
+                        <h1>Sign in</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your account</span>
+                        <input class="textlog" type="email" placeholder="Email" />
+                        <input class="textlog" type="password" placeholder="Password" />
+                        <a href="#">Forgot your password?</a>
+                        <button class="button-singin-up">Sign In</button>
+                    </form>
+                </div>
+                <div class="user overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1 style="color:black;">Hi, Friend!</h1>
+                            <p style="color: black;">If you already have an account, click SIGNIN</p>
+                            <button class="ghost" id="signIn">Sign In</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1 style="color: black;">Hello, Friend!</h1>
+                            <p style="color: black;">If you don't have an account yet, click here SIGN UP</p>
+                            <button class="ghost" id="signUp">Sign Up</button>
+                        </div>
+                    </div>
+                    <i class='bx bx-x' id="close-cart2"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="breadcrumb-section breadcrumb-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <div class="breadcrumb-text">
+                        <p>THAY-XDSHOP</p>
+                        <h1>BLOG</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="latest-news mt-lg-5 mb-150">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-latest-news shadow">
+                        <a href="./Single Blog/blogsingle7.html">
+                            <div class="latest-news-bg news-bg-13"></div>
+                        </a>
+                        <div class="news-text-box">
+                            <h3><a href="./Single Blog/blogsingle7.html">Mambar Green In SHOP</a></h3>
+                            <p class="blog-meta">
+                                <span class="author"><i class="fas fa-user"></i> Admin</span>
+                                <span class="date"><i class="fas fa-calendar"></i> 12 DEC, 2022</span>
+                            </p>
+                            <p class="excerpt">Open up a new experience with these Kyrie Irving 6 shoes with beautiful
+                                design and extremely attractive price.</p>
+                            <a href="./Single Blog/blogsingle7.html" class="read-more-btn">read more <i
+                                    class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-latest-news shadow">
+                        <a href="./Single Blog/blogsingle8.html">
+                            <div class="latest-news-bg news-bg-14"></div>
+                        </a>
+                        <div class="news-text-box">
+                            <h3><a href="./Single Blog/blogsingle8.html">JORDAN STYLE</a></h3>
+                            <p class="blog-meta">
+                                <span class="author"><i class="fas fa-user"></i> Admin</span>
+                                <span class="date"><i class="fas fa-calendar"></i> 5 DEC, 2022</span>
+                            </p>
+                            <p class="excerpt">Open up a new experience with these Kyrie Irving 6 shoes with beautiful
+                                design and extremely attractive price.</p>
+                            <a href="./Single Blog/blogsingle8.html" class="read-more-btn">read more <i
+                                    class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-latest-news shadow">
+                        <a href="./Single Blog/blogsingle9.html">
+                            <div class="latest-news-bg news-bg-15"></div>
+                        </a>
+                        <div class="news-text-box">
+                            <h3><a href="./Single Blog/blogsingle9.html">JORDAN STREET</a></h3>
+                            <p class="blog-meta">
+                                <span class="author"><i class="fas fa-user"></i> Admin</span>
+                                <span class="date"><i class="fas fa-calendar"></i> 28 NOV, 2022</span>
+                            </p>
+                            <p class="excerpt">Open up a new experience with these Kyrie Irving 6 shoes with beautiful
+                                design and extremely attractive price.</p>
+                            <a href="./Single Blog/blogsingle9.html" class="read-more-btn">read more <i
+                                    class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-latest-news shadow">
+                        <a href="./Single Blog/blogsingle10.html">
+                            <div class="latest-news-bg news-bg-16"></div>
+                        </a>
+                        <div class="news-text-box">
+                            <h3><a href="./Single Blog/blogsingle10.html">JORDAN PURPLE AND ORANGE</a></h3>
+                            <p class="blog-meta">
+                                <span class="author"><i class="fas fa-user"></i> Admin</span>
+                                <span class="date"><i class="fas fa-calendar"></i> 25 NOV, 2022</span>
+                            </p>
+                            <p class="excerpt">Open up a new experience with these Kyrie Irving 6 shoes with beautiful
+                                design and extremely attractive price.</p>
+                            <a href="./Single Blog/blogsingle10.html" class="read-more-btn">read more <i
+                                    class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-latest-news shadow">
+                        <a href="./Single Blog/blogsingle11.html">
+                            <div class="latest-news-bg news-bg-17"></div>
+                        </a>
+                        <div class="news-text-box">
+                            <h3><a href="./Single Blog/blogsingle11.html">PG & Play Station PRODUCT</a></h3>
+                            <p class="blog-meta">
+                                <span class="author"><i class="fas fa-user"></i> Admin</span>
+                                <span class="date"><i class="fas fa-calendar"></i> 9 OCT, 2022</span>
+                            </p>
+                            <p class="excerpt">Open up a new experience with these Kyrie Irving 6 shoes with beautiful
+                                design and extremely attractive price.</p>
+                            <a href="./Single Blog/blogsingle11.html" class="read-more-btn">read more <i
+                                    class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-latest-news shadow">
+                        <a href="./Single Blog/blogsingle12.html">
+                            <div class="latest-news-bg news-bg-18"></div>
+                        </a>
+                        <div class="news-text-box">
+                            <h3><a href="./Single Blog/blogsingle12.html">STRONG SAME LEBRON NOW</a></h3>
+                            <p class="blog-meta">
+                                <span class="author"><i class="fas fa-user"></i> Admin</span>
+                                <span class="date"><i class="fas fa-calendar"></i> 5 SEP, 2022</span>
+                            </p>
+                            <p class="excerpt">Open up a new experience with these Kyrie Irving 6 shoes with beautiful
+                                design and extremely attractive price.</p>
+                            <a href="./Single Blog/blogsingle12.html" class="read-more-btn">read more <i
+                                    class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center text-white">
+                            <div class="pagination-wrap">
+                                <ul>
+                                    <li><a href="blog2.html">Prev</a></li>
+                                    <li><a href="blog.html">1</a></li>
+                                    <li><a href="blog2.html">2</a></li>
+                                    <li><a class="active" href="blog3.html">3</a></li>
+                                    <li><a href="blog.html">Next</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end latest news -->
+
+
+
+
+    <!--footer start-->
+    <div class="container-fluid bg-white text-black-50 py-0 px-sm-3 px-lg-5 shadow-lg footer-contact"
+        style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-primary"><span class="text-dark">THAY-XDSHOP</span></h1>
+                </a>
+                <p style="font-family: 'Noto Sans Lao', sans-serif;">Customers can contact us through the channels below
+                    Thank you and honored that the customer used our service</p>
+                <h6 class="text-dark text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-outline-success btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-success btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-success btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-success btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-dark text-uppercase mb-4" style="letter-spacing: 5px;">SUPPORT</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Product</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help & Support</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Return Policy</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms Of Use</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>FAQ</a>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-dark text-uppercase mb-4" style="letter-spacing: 5px;">Our Brances</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Laos</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Thailand</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Japan</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Canada</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>United State</a>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-dark text-uppercase mb-4" style="letter-spacing: 5px;">Payment method</h5>
+                <img src="./Images/visa.png" alt="" style="width: 44px;">
+                <img src="./Images/master-card.png" alt="" style="width: 44px;">
+                <img src="./Images/moneygram.png" alt="" style="width: 44px;">
+                <img src="./Images/paypal.png" alt="" style="width: 44px;">
+                <h5 class="text-dark text-uppercase mt-5 mb-4  " style="letter-spacing: 5px;">Contact Us</h5>
+                <p style="font-family: 'Noto Sans Lao', sans-serif;"><i
+                        class="fa fa-map-marker-alt mr-2 text-danger"></i>Street 13, SaiGon City, Vietnam </p>
+                <p><i class="fa fa-phone-alt mr-2 text-success"></i>+865 20 96863648</p>
+                <p><i class="fa fa-envelope mr-2 text-warning"></i>xoandev@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+    <!-- Back to Top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+
+
+
+
+
+</body>
+<script src='main.js'></script>
+<script>
+    document.querySelector("#close-cart2").onclick = () => {
+        user.classList.remove("active")
+
+    }
+
+
+</script>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>THAY-XDSHOP</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='home.css'>
+    <link rel="icon" type="image/x-icon" href="./Images/basketball-ball.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/inter-ui@3.11.0/inter.min.css'>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,900;1,900&family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container-fluid nav-bar p-0">
+        <div class="container-fluid  p-0" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand logo">
+                    <h3 class="m-0 text-primary"><span class="text-dark"><img src="./Images/logo.jpg" alt=""
+                                style="width: 65px;"> THAY-XDSHOP</h3>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3 text-center" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-3 navtext">
+                        <a href="home.html" class="nav-item">Home</a>
+                        <a href="./testabout.html" class="nav-item ">About</a>
+                        <a href="index.html" class="nav-item">Product</a>
+                        <a href="newcolection.html" class="nav-item ">New Colection</a>
+                        <a href="contact.html" class="nav-item">Contact</a>
+                        <a href="blog.html" class="nav-item"
+                            style="color: #16BF78; border-bottom: solid 3px #16BF78;">Blog</a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse justify-content-between px-3 text-center" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0 header-icons">
+                        <i class='bx bx-search' id="search-icons"></i>
+                        <i class='bx bx-user' id="user-icons"></i>
+                        <i class='bx bx-shopping-bag' id="cart-icons" data-quantity="0"></i>
+                        <i class='bx bx-menu' id="menu-icons"></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="search-box">
+                <input type="search" name="" id="search-item" placeholder="Search ..." onkeyup="searchs()">
+            </div>
+            <!--Cart Box-->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!--Content-->
+                <div class="cart-content">
+
+                </div>
+                <!--Total-->
+                <div class="total">
+                    <div class="total-title">Total: </div>
+                    <div class="total-price">0 $</div>
+                </div>
+
+                <!--BUY1-->
+                <button type="button" class="btn-buy"> Buy Now!</button>
+                <!--Buy Button-->
+                <button class="truck-button">
+                    <span class="default">Complete Order</span>
+                    <span class="success">
+                        Order Placed
+                        <svg viewbox="0 0 12 10">
+                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                        </svg>
+                    </span>
+                    <div class="truck">
+                        <div class="wheel"></div>
+                        <div class="back"></div>
+                        <div class="front"></div>
+                        <div class="box"></div>
+                    </div>
+                </button>
+                <!--Cart Close-->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+
+            <!--USER-->
+
+            <div class="user container" id="container">
+                <div class="form-container sign-up-container ">
+                    <form action="#">
+                        <h1>Create Account</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your email for registration</span>
+                        <input class="textlog" type="text" placeholder="Name" />
+                        <input class="textlog" type="email" placeholder="Email" />
+                        <input class="textlog" type="password" placeholder="Password" />
+                        <a href="">You already have an account?</a>
+                        <button class="button-singin-up">Sign Up</button>
+                    </form>
+                </div>
+
+                <!--LOG IN FORM -->
+
+                <div class="user form-container sign-in-container">
+                    <form action="#">
+                        <h1>Sign in</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your account</span>
+                        <input class="textlog" type="email" placeholder="Email" />
+                        <input class="textlog" type="password" placeholder="Password" />
+                        <a href="#">Forgot your password?</a>
+                        <button class="button-singin-up">Sign In</button>
+                    </form>
+                </div>
+                <div class="user overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1 style="color:black;">Hi, Friend!</h1>
+                            <p style="color: black;">If you already have an account, click SIGNIN</p>
+                            <button class="ghost" id="signIn">Sign In</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1 style="color: black;">Hello, Friend!</h1>
+                            <p style="color: black;">If you don't have an account yet, click here SIGN UP</p>
+                            <button class="ghost" id="signUp">Sign Up</button>
+                        </div>
+                    </div>
+                    <i class='bx bx-x' id="close-cart2"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bigcontent">
+        <div class="content">
+            <h1 class="heading"><i class='bx bxs-basketball'></i> THAY-XDSHOP</h1>
+            <h4 class="description">
+                THAY-XDSHOP is a store that sells 100% genuine basketball shoes imported from the United States (USA),
+                with many types of shoes for customers to choose from.
+
+            </h4>
+            <div class="btn-goshop"><a href="index.html">GO TO SHOP NOW!</a></div>
+        </div>
+        <img src="/home/bas1.jpg" class="product-img" data-tilt style="rotate: -20deg;">
+    </div>
+    <div class="varians">
+        <div class="varian active one">
+            <img src="./home/bas1.jpg" />
+        </div>
+        <div class="varian two">
+            <img src="./home/bas2.jpg" />
+        </div>
+        <div class="varian three">
+            <img src="./home/bas3.jpg" />
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+    <script src='tilt.jquery.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src='https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js'></script>
+
+    <script>
+        document.querySelector("#close-cart2").onclick = () => {
+            user.classList.remove("active")
+        }
+
+        document.querySelector(".cancel").onclick = () => {
+            checkout.classList.remove("active")
+            document.getElementById('search-icons').style.color = 'black';
+            document.getElementById('cart-icons').style.color = 'black';
+            document.getElementById('menu-icons').style.color = 'black';
+            document.getElementById('user-icons').style.color = 'black';
+        }
+        let checkout = document.querySelector(".checkout")
+
+        document.querySelector(".btn-checkout").onclick = () => {
+            checkout.classList.toggle("active");
+            navbar.classList.remove("active")
+            cart.classList.remove("active");
+            user.classList.remove("active");
+        }
+
+    </script>
+</body>
+
+</html>
