@@ -55,3 +55,5 @@
 🚀 Step 4: Open a new terminal tab -> if this version is old, type this command in the terminal -> npm install -> help you reinstall the latest version -> next type npm start -> to run the program
 
 🚀 Step 5: Type in your browser -> localhost:3000 -> it will output a URL code like this -> http://localhost:3000/
+
+🙏 If you find it useful, please give me a Star 🙏
