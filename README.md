@@ -57,3 +57,5 @@
 🚀 Step 5: Type in your browser -> localhost:3000 -> it will output a URL code like this -> http://localhost:3000/
 
 🙏 If you find it useful, please give me a Star 🙏
+
+- [X] Status Project: Done
